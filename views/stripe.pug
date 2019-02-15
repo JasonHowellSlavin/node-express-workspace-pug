@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 stripe page
+    p stripe stuff goes here
+    div
+        each key, val in response
+            li: strong= 'Charge ID: ' + val
+            li= ' for amount: ' + response[val].amount + '$ USD'
